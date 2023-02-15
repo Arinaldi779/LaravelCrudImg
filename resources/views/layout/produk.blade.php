@@ -48,6 +48,20 @@
         </div>
     </div>
 </div>
+@foreach ($data as $slider)
+<div class="aaa">
+    <img src="{{ asset('/upload/')}}/{{$slider->gambar }}" 
+    data-thumb="{{ asset('/upload/')}}/{{$slider->gambar }}" 
+    alt="" height="615px" width="1263px">
+    <div class="pra">
+        <h1>{{$slider->judulProduk}}</h1>
+        <p>{{$slider->deskripsi}}</p>
+        <div class="btn-1">
+            <a href="">Contact US</a>
+        </div>
+    </div>
+</div>
+@endforeach
 
 
 <!-- Modal -->

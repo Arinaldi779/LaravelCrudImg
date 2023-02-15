@@ -32,3 +32,7 @@ Route::get('/edit/{id}',[C_Login::class, 'edit']);
 Route::post('/updateData/{id}',[C_Login::class, 'update']);
 //Delete Hapus
 Route::get('/hapus/{id}',[C_Login::class, 'destroy']);
+
+Route::get('/tes', function () {
+    return view('new');
+});
